@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>INDIAN RAILWAYS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+<script>
+    function passval()
+    {
+        var selecttext=document.getElementById("from").value;
+        localStorage.setItem("storedfromvalue",selecttext);
+        return true;
+
+        var selecttext=document.getElementById("to").value;
+        localStorage.setItem("storedtovalue",selecttext);
+        return true;
+    }
+
+</script>
+<body>
+    <header>
+        <div class="title">
+        <h1 id="title">INDIAN RAILWAYS</h1><i class="bi bi-train-front"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sukh.html" target="_blank">HOME</a></li>  
+                <li><a href="register.html" target="_blank">REGISTER</a></li>
+                <li><a href="contact.html" target="_blank">CONTACT</a></li>
+                <li><a href="train.html" target="_blank">TRAIN</a></li>
+                <li><a href="buses.html" target="_blank">BUSES</a></li>
+                <li><a href="flight.html" target="_blank">FLIGHT</a></li>
+                <li><a href="hotel.html" target="_blank">HOTEL</a></li>
+                <li><a href="login.html" target="_blank">LOGIN/SIGNUP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <div class="banner">
+    <div class="ticket">
+        <h1>BOOK YOUR TICKET HERE</h1><br>
+        <center>
+            <form action="available_trains.html">
+            <a>FROM:</a>  
+            <select id="from">FROM
+                <option value="Delhi">DELHI</option>
+                <option value="NOIDA">NOIDA</option>
+                <option value="AGRA">AGRA</option>
+                <option value="PHAGWARA">PHAGWARA</option>
+                <option value="AMRITSAR">AMRITSAR</option>
+            </select><br>
+             <a>TO:</a>  &nbsp;&nbsp;&nbsp;
+            <select id="to">TO
+                <option value="AMRITSAR">AMRITSAR</option>
+                <option value="Delhi">DELHI</option>
+                <option value="Noida">NOIDA</option>
+                <option value="Agra">AGRA</option>
+                <option value="Phagwara">PHAGWARA</option>
+                
+            </select><br>
+        
+        <!-- <left><input placeholder="From" type="text"><br></left> -->
+        <!-- <input placeholder="To" type="text"><br> -->
+        <a>DATE: &nbsp;&nbsp;&nbsp;</a><input id="date" type="date"> <br>
+        <a>CLASS: &nbsp;&nbsp;&nbsp;</a>
+            <select>
+                <option>General</option>
+                <option>AC</option>
+                <!-- <option>General</option> -->
+            </select>
+            <br>
+            
+        <input type="submit" value="Find Trains" onclick="passval()" id="findtrains">
+        </center>
+    </form>
+     </div>
+    </div>
+
+
+    <h1 id="holidayh1">HOLIDAYS</h1>
+    <div class="holidays">
+       
+        <div class="boxes"> 
+            <h2>Mahraja's Express</h2>
+            <p>Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p><br>
+            
+        </div>
+        <div class="boxes">
+            <h2>International Packages</h2>
+            <p>Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p><br>
+            
+        </div>
+        <div class="boxes">
+            <h2>Domestic Air Packages</h2>
+            <p>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!</p>
+            <br>
+            
+        </div>
+        
+    </div>
+    <footer><br>
+        <h4>Indian Railways</h4><br>
+<br><br>
+        <p>Always in your Service......</p>
+    </footer>
+</body>
+<style>
+
+    #findtrains{
+        height: 30px;
+        width: 13rem ;
+        border-radius: 6px;
+        border: none;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px;
+    }
+    .ticket select{
+        height: 2rem;
+        width: 15rem;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+    }
+    .ticket select{
+        margin-bottom: 1.5rem;
+    }
+    .ticket a{
+        font-family: 'Roboto';
+        font-weight: bold;
+    }
+    .ticket #date{
+        width: 15rem;
+    }
+    .ticket button{
+        width: 15rem;
+        height: 3rem;
+        border-radius: 10px;
+        border: 1px solid black;
+        font-weight: bold;
+        font-size: 1rem;
+        background-color: skyblue;
+        border: none;
+        box-shadow: 0px 0px 10px black;
+    }
+
+
+
+    .title{
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .title i{
+        font-size: 4rem;
+        position: relative;
+        left: 1%;
+    }
+    #title{
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3rem;
+        margin: 8px 0px;
+    }
+    li a, #bbutonn{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    }
+    #bbutonn{
+        height: 40px;
+        border-radius: 8px;
+        position: absolute;
+            right: 35px;
+            transform: translateY(-30%);
+    }
+    li a{
+      text-decoration: none;  
+      /* border: 1px solid black; */
+      color: white;
+    }
+    li{
+        /* border: 1px solid black; */
+        
+    }
+    nav{
+        border: 1px solid black;
+        background-color: rgba(3, 3, 3, 0.87);
+        border-radius: 10px;
+    }
+
+    #holidayh1{
+        text-align:center;
+        font-family: 'Quicksand';
+    }
+    .holidays{
+        
+        display: flex;
+        justify-content: center;
+
+
+    }
+    .boxes{
+        width: 256px;
+        background-color:beige;
+        margin-left: 103px;
+        margin-top:30px;
+        box-shadow: 0px 5px 15px grey;
+
+    }
+    .boxes p{
+        margin: 0px 12px 0px 12px;
+    }
+    .boxes h2{
+        margin-left:12px;
+    }
+    .boxes a{
+        margin-left:12px;
+        text-decoration: none;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size:12px;
+        color: black;
+
+    }
+    li{
+        list-style-type: none;
+        margin-left: 80px;
+        a:hover,{
+            text-decoration:underline;
+            color:grey;
+        }
+    }
+    ul{
+        display: flex;
+    }
+    .ticket{
+        border:solid black 2px;
+        width:479px;
+        height:429px;
+        margin-top:100px;
+        background-color: rgba(240, 242, 243, 0.754);
+        border-radius: 15px;
+
+
+        
+    }
+    .ticket h1{
+        text-align:center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    input{
+        margin-bottom:20px;
+        height: 25px;
+    }
+    #date{
+        width: 170px;
+    }
+    #buttonn{
+        width:172px;
+        height:29px;
+        border:none;
+        background-color:greenyellow;
+        color:white;
+    }
+.banner{
+    background-image: url('https://images.unsplash.com/uploads/1413387158190559d80f7/6108b580?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+   /* background-size:1344px 717px; */
+   background-size: COVER;
+    background-repeat:no-repeat;
+    height: 800px;
+}
+footer h4{
+    padding-top: 100px;
+    text-align: center;
+    margin: 0px 0px;
+    font-size: 3rem;
+}
+footer p{
+    color: white;
+    margin: 0px 0px;
+    text-align: center;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom:38px;
+    height: 17rem;
+}
+
+</style>
+</html>
